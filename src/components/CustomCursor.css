@@ -2,16 +2,10 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     pointer-events: none;
-    transition: transform 0.1s ease-out, background-color 0.3s, border 0.3s;
     z-index: 9999;
-    background-color: black;
-    border: 2px solid white;
-    box-shadow: 0 0 10px 3px white;
-}
-
-/* Optional: Hide default cursor */
-body {
-    cursor: none;
-}
+    transform: translate(-50%, -50%);
+  }
+  
