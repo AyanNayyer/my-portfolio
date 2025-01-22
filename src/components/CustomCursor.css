@@ -1,12 +1,11 @@
 .custom-cursor {
-    width: 25px;
-    height: 25px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
     position: fixed;
     pointer-events: none;
     z-index: 9999;
     transform: translate(-50%, -50%);
-    mix-blend-mode: difference;
     transition: width 0.3s, height 0.3s;
   }
   
@@ -18,6 +17,27 @@
   .custom-cursor.dark {
     border: 2px solid rgba(255, 255, 255, 0.5);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  }
+  
+  .custom-cursor::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: currentColor;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .custom-cursor.light::after {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .custom-cursor.dark::after {
+    background-color: rgba(255, 255, 255, 0.5);
   }
   
   @media (hover: none) and (pointer: coarse) {
