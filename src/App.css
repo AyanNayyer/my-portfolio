@@ -93,7 +93,8 @@ section {
   justify-content: center;
   height: 100vh;
   text-align: center;
-  margin-bottom: 0;  /* Ensure no extra space after landing page */
+  margin-top: -100px; 
+  margin-bottom: 15px;  /* Ensure no extra space after landing page */
 }
 
 .name-title {
@@ -114,17 +115,17 @@ main > section:not(.landing-page) {
   padding: 0 20px;  /* Add some horizontal padding */
 }
 
-.subtitle {
+/*.subtitle {
   font-size: clamp(1rem, 3vw, 2rem);
   font-weight: 400;
   letter-spacing: 0.1em;
-  margin-top: -1rem; /* Negative margin to pull it up closer to the name */
-  color: #666;
+  margin-top: -1rem;
+  color: #ef1e1e;
   font-family: "Rubik Puddles", serif;
-}
+} */
 
 .dark-mode .subtitle {
-  color: #aaa;
+  color: #f6de28;
 }
 
 .landing-content {
@@ -143,16 +144,94 @@ main > section:not(.landing-page) {
   margin-bottom: 0; /* Removes bottom margin */
 }
 
+/*.subtitle {
+  font-family: "Sixtyfour Convergence", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" -34,
+    "XELA" 37,
+    "YELA" 8;
+  font-size: clamp(1.2rem, 4vw, 2.5rem);
+  letter-spacing: 0.15em;
+  margin-top: -1rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase; 
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400&display=swap');
+
+.subtitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 300;
+  font-size: clamp(1.2rem, 4vw, 2.5rem);
+  letter-spacing: 0.2em;
+  margin-top: -1rem;
+  color: rgba(129, 21, 21, 0.8);
+  text-transform: uppercase;
+}
+
+
 @media (hover: none) and (pointer: coarse) {
   body {
     cursor: auto;
   }
 }
 
-@media (max-width: 768px) {
-  .name-title {
-    font-size: clamp(6rem, 20vw, 15rem);
+/* Mobile-specific styles */
+@media screen and (max-width: 768px) {
+  .landing-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
   }
+
+  .name-title {
+    font-size: clamp(3.5rem, 15vw, 6rem);
+    line-height: 0.9;
+    margin: 0;
+    padding: 0;
+  }
+
+  .subtitle {
+    font-size: clamp(0.8rem, 4vw, 1.2rem);
+    color: #8B0000; /* Dark red color as shown in the image */
+    margin-top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 1.4;
+  }
+
+  /* Welcome text styling */
+  .welcome-text {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  /* Adjust header for mobile */
+  header {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+  }
+
+  .mode-toggle {
+    transform: scale(0.8); /* Make the toggle slightly smaller on mobile */
+  }
+
+/* Additional mobile optimizations */
+@media screen and (max-height: 600px) {
+  .landing-page {
+    padding-top: 60px; /* Add some padding when screen height is small */
+  }
+}
   
   main > section:not(.landing-page) {
     margin-top: 20px;
