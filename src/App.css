@@ -7,9 +7,10 @@ body {
 }
 
 .app {
-  max-width: 1200px;
+  max-width: 100%;  /* Changed from 1200px to allow full-width landing page */
   margin: 0 auto;
   padding: 20px;
+  position: relative;  /* Added for positioning the mode toggle */
 }
 
 .dark-mode {
@@ -18,10 +19,10 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 40px;
+  position: fixed;  /* Changed to fixed positioning */
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
 }
 
 button {
@@ -30,9 +31,8 @@ button {
 }
 
 main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 section {
@@ -75,15 +75,86 @@ section {
   margin-right: 10px;
 }
 
+.modak-regular {
+  font-family: "Modak", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rubik-puddles-regular {
+  font-family: "Rubik Puddles", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.landing-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  margin-bottom: 0;  /* Ensure no extra space after landing page */
+}
+
+.name-title {
+  font-size: clamp(8rem, 25vw, 20rem);  /* Increased font size */
+  line-height: 0.9;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+}
+
+.dark-mode .name-title {
+  color: #fff;
+}
+
+/* Adjust other sections to not overlap with the large name */
+main > section:not(.landing-page) {
+  margin-top: 40px;  /* Add some space between sections */
+  padding: 0 20px;  /* Add some horizontal padding */
+}
+
+.subtitle {
+  font-size: clamp(1rem, 3vw, 2rem);
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  margin-top: -1rem; /* Negative margin to pull it up closer to the name */
+  color: #666;
+  font-family: "Rubik Puddles", serif;
+}
+
+.dark-mode .subtitle {
+  color: #aaa;
+}
+
+.landing-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0; /* Removes extra space between elements */
+}
+
+.name-title {
+  font-size: clamp(8rem, 25vw, 20rem);
+  line-height: 0.8; /* Reduced from 0.9 to tighten spacing */
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  margin-bottom: 0; /* Removes bottom margin */
+}
+
 @media (hover: none) and (pointer: coarse) {
   body {
     cursor: auto;
   }
 }
 
-
 @media (max-width: 768px) {
-  main {
-    grid-template-columns: 1fr;
+  .name-title {
+    font-size: clamp(6rem, 20vw, 15rem);
+  }
+  
+  main > section:not(.landing-page) {
+    margin-top: 20px;
   }
 }
