@@ -180,60 +180,60 @@ main > section:not(.landing-page) {
   }
 }
 
-/* Mobile-specific styles */
+/* Mobile specific adjustments */
 @media screen and (max-width: 768px) {
   .landing-page {
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 20px;
+    justify-content: center;
+    position: relative;
+    overflow: hidden; /* Hides overflow content */
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 0; /* Reset margin for mobile */
   }
 
   .name-title {
-    font-size: clamp(3.5rem, 15vw, 6rem);
-    line-height: 0.9;
-    margin: 0;
+    width: 85vw;
+    margin: 0 auto;
     padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: clamp(7rem, 21vw, 10rem);
   }
 
   .subtitle {
+    margin-top: 50px; /* Increased margin from title */
     font-size: clamp(0.8rem, 4vw, 1.2rem);
-    color: #8B0000; /* Dark red color as shown in the image */
-    margin-top: 1rem;
-    text-transform: uppercase;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
     letter-spacing: 0.1em;
-    line-height: 1.4;
   }
 
-  /* Welcome text styling */
-  .welcome-text {
-    font-size: 1.2rem;
-    margin-top: 2rem;
-    text-align: center;
+  /* Content wrapper styles */
+  .content-wrapper {
+    position: relative;
+    background-color: inherit;
+    min-height: 100vh; /* Ensures full height content */
   }
 
-  /* Adjust header for mobile */
-  header {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 1000;
-  }
-
-  .mode-toggle {
-    transform: scale(0.8); /* Make the toggle slightly smaller on mobile */
-  }
-
-/* Additional mobile optimizations */
-@media screen and (max-height: 600px) {
-  .landing-page {
-    padding-top: 60px; /* Add some padding when screen height is small */
-  }
-}
-  
   main > section:not(.landing-page) {
-    margin-top: 20px;
+    margin-top: 0;
+    padding: 20px;
+  }
+
+  /* Ensures content starts at the top of its container */
+  main {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
   }
 }
+

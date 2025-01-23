@@ -90,10 +90,10 @@ const App = () => {
     <h1 className="name-title modak-regular">
       Ayan<br />Nayyer
     </h1>
-    <p className="subtitle rubik-puddles-regular">Data Science | Web Dev | Literature</p>
+    <p className="subtitle">Data Science | Web Dev | Literature</p>
   </div>
 </section>
-
+      <div className="content-wrapper">
         <animated.section style={springProps} ref={ref}>
           <h3>Hey Welcome to my Passion Project. </h3>
         </animated.section>
@@ -117,6 +117,7 @@ const App = () => {
         </Suspense>
 
         <Contact />
+        </div>
       </main>
     </div>
   );
