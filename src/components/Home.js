@@ -4,7 +4,6 @@ import { useSpring, animated } from 'react-spring';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Contact from './contact';  // If Contact is a separate component
-import LazyProjects from './Projects';
 
 const Home = () => {
   const [ref, inView] = useInView({
@@ -28,27 +27,6 @@ const Home = () => {
         </div>
       </section>
       <div className="content-wrapper">
-        <animated.section style={springProps} ref={ref}>
-          <h3>Hey Welcome to my Passion Project. </h3>
-        </animated.section>
-
-        <motion.section
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <h2>Skills</h2>
-          <ul>
-            <li>React</li>
-            <li>JavaScript</li>
-            <li>CSS3 & HTML5</li>
-            <li>Node.js</li>
-          </ul>
-        </motion.section>
-
-        <Suspense fallback={<div>Loading projects...</div>}>
-          <LazyProjects />
-        </Suspense>
 
         <Contact />
       </div>

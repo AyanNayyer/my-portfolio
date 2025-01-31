@@ -128,6 +128,125 @@ section {
   color: #fff;
 }
 
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.projects-title {
+  font-size: clamp(3rem, 8vw, 5rem);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.page-title {
+  font-size: clamp(4rem, 15vw, 12rem);
+  text-align: center;
+  color: white;
+  margin: 2rem 0;
+  font-family: "Modak", serif;
+}
+
+.category-nav {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  font-family: "Rubik Puddles", serif;
+  color: inherit;
+  /*text-decoration: none;*/
+  padding: 8px 16px;
+  margin-right: 10px;
+  position: relative;
+  transition: opacity 0.3s ease;
+}
+
+.dark-mode .nav-link {
+  color: #fff;
+}
+
+/* Keep the hover effect */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.social-icons a {
+  color: inherit;
+  font-size: 1.5rem;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover {
+  opacity: 1;
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: inherit;
+  z-index: 999;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  padding: 15px 0;
+}
+
+
+/* Relative position for other pages */
+/*.blog-container .copyright,
+.projects-container .copyright {
+  position: relative;
+  margin-top: 40px;
+}*/
+
+@media (max-width: 768px) {
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    font-size: 1.2rem;
+  }
+}
+
+
 /* Adjust other sections to not overlap with the large name */
 main > section:not(.landing-page) {
   margin-top: 40px;  /* Add some space between sections */
