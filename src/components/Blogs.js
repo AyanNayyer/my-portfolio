@@ -11,7 +11,6 @@ const BlogPost = () => {
   const post = blogPosts.find(post => post.id === parseInt(id));
 
   if (!post) return <div>Post not found</div>;
-  const contentWithoutTitle = post.content.replace(/<h2>.*<\/h2>/, '');
 
   return (
     <motion.div 

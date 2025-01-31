@@ -23,7 +23,7 @@ export const blogPosts = [
         category: 'philosophical',
         excerpt: 'Should you go inside an open house or not....?',
         date: '2024-10-10',
-        content: `<h2>The House</h2>
+        content: `
         <p>Should you go inside an open house or not....?</p>`
       },
       {
