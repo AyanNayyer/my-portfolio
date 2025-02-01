@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Link } from 'react-router-dom';
+/*import { Link } from 'react-router-dom';*/
 import './Project.css';
 
 const projects = [
@@ -148,6 +148,7 @@ const Projects = () => {
   <ul>
     {/* Frontend */}
     <li>React</li>
+    <li>NodeJS</li>
     <li>VueJS</li>
     <li>JavaScript</li>
     <li>HTML5 & CSS3</li>
