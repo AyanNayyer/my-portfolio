@@ -8,7 +8,6 @@ import Projects from './components/Projects';
 import Footer from './components/Footer';
 import './App.css';
 
-// Header component with useLocation
 const Header = ({ isDarkMode, toggleDarkMode }) => {
   const location = useLocation();
   
@@ -34,10 +33,15 @@ const Header = ({ isDarkMode, toggleDarkMode }) => {
   );
 };
 
-// AppContent component to use location inside Router
 const AppContent = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true); // Changed to true for default dark mode
   const location = useLocation();
+
+  useEffect(() => {
+    // Add dark-mode class by default
+    document.body.classList.add('dark-mode');
+    updateFavicon(true);
+  }, []);
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
@@ -72,7 +76,6 @@ const AppContent = () => {
   );
 };
 
-// Main App component
 const App = () => {
   return (
     <Router>
