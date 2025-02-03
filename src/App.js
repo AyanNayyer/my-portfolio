@@ -1,4 +1,5 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
+import { Analytics } from "@vercel/analytics/react"
 import { BrowserRouter as Router, Routes, Route, Link, useLocation} from 'react-router-dom';
 import CustomCursor from './components/CustomCursor';
 import DarkModeToggle from './components/DarkMode';
