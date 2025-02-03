@@ -12,7 +12,8 @@
     "react-intersection-observer": "^9.15.1",
     "react-router-dom": "^7.1.4",
     "react-scripts": "5.0.1",
-    "react-spring": "^9.7.5"
+    "react-spring": "^9.7.5",
+    "react-touch-ripple": "^0.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
