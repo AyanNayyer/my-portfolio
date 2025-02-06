@@ -156,7 +156,6 @@ const Projects = () => {
 
     {/* Backend */}
     <li>Flask</li>
-    <li>Node.js</li>
     <li>Redis</li>
     <li>Celery</li>
     <li>RESTful APIs</li>
