@@ -227,6 +227,38 @@ Apparently I like to believe in this quote which goes as:
 <h3>"If You do good, Good will come back to you"</h3>
 
 And also who doesn't love generous people</p>`
+      },
+      {
+        id: 12,
+        title: 'Red and Green',
+        category: 'philosophical',
+        excerpt: 'To Go or to Stop....',
+        date: '2024-11-10',
+        content: `
+        <p>Have you seen traffic lights? The red and green lights and at times yellow too? Stopping - The RED takes just a moment, a sudden break and you remain there. </p>
+
+<p>But Moving on? that takes time. The green lasts longer because getting back into motion isn’t instant. Not forgetting the yellow - a brief warning</p>
+<p>Keeps reminding me that stopping is easy, but moving forward is what takes effort.</p>
+<div class="blog-image-container">
+    <img src="/traffic.jpeg" alt="traffic light" class="blog-image" />
+    <b><u><p class="image-caption">The RED</p></u></b>
+</div>`
+
+      },
+      {
+        id: 13,
+        title: 'To Pixy.',
+        category: 'philosophical',
+        excerpt: 'how to describe this?',
+        date: '2024-07-26',
+        content: `
+        <p>Heard from somewhere that If there's something bad coming your way, your pet endures it first, this was when pixu went outside as he very much liked to, he didn't return for 2 months, but after every few days we used to go searching for him, I eventually found him out by putting a poster with his very cute face (every cute comes with naughty) and my number, I still remember the  excitement we had when I got that call. </p>
+
+<p>He used to sit on the main gate and wait for someone to come or go so that he can sleekly get outside without anyone noticing. Mind you my guy was stealthy. He did go out one last time, doing what he loved the most, but I can no longer expect a random phone call after 2 months, I can't console my family with the hope that he is just roaming around the neighborhood and will comeback after his tour.</p>
+<p>Explore outsides well buddy.</p>
+<div class="blog-image-container">
+    <img src="/pixy.jpeg" alt="Pixy" class="blog-image" />
+</div>`
       }
     // Add more posts following the same structure
   ];
