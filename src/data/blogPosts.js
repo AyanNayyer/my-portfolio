@@ -276,8 +276,8 @@ What follows is <b>"Accidental fallacy"</b>, you guarantee an exception as a gen
 <p>Both extremes distort acumen, but deliberate thinking and reflecting upon yourselves serve as an anchor, keeping you grounded in reason.</p>
 <br />
 <br />
-<p><i>Secundum quid—when people selectively focus on evidence supporting their beliefs while ignoring contradictions.
-<br />Accidental Fallacy—when people mistakenly generalize an exception, leading to false expectations.</i></p>`
+<p><i>Secundum quid— selectively focusing on evidence supporting your beliefs while ignoring contradictions.
+<br />Accidental Fallacy— generalizing an exception, leading to false expectations.</i></p>`
       }
     // Add more posts following the same structure
   ];
