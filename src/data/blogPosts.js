@@ -259,6 +259,25 @@ And also who doesn't love generous people</p>`
 <div class="blog-image-container">
     <img src="/pixy.jpeg" alt="Pixy" class="blog-image" />
 </div>`
+      },
+      {
+        id: 14,
+        title: 'Biases',
+        category: 'philosophical',
+        excerpt: 'The extremes you want to save yourself from.',
+        date: '2025-02-09',
+        content: `
+        <p>“<b>Secundum quid</b>”, seeing only what supports your hypothesis and ignoring everything that negates it, is an ingrained human habit.
+If even slight stress is applied, a picayune example could emerge shattering your fallacy.
+</p>
+<p>Occasionally, reality meets expectations. Rarely, but it does happen.
+What follows is <b>"Accidental fallacy"</b>, you guarantee an exception as a generalized example and expect luck to favor you again and again
+</p>
+<p>Both extremes distort acumen, but deliberate thinking and reflecting upon yourselves serve as an anchor, keeping you grounded in reason.</p>
+<br />
+<br />
+<p><i>Secundum quid—when people selectively focus on evidence supporting their beliefs while ignoring contradictions.
+<br />Accidental Fallacy—when people mistakenly generalize an exception, leading to false expectations.</i></p>`
       }
     // Add more posts following the same structure
   ];
