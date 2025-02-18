@@ -278,6 +278,23 @@ What follows is <b>"Accidental fallacy"</b>, you guarantee an exception as a gen
 <br />
 <p><i>Secundum quid— selectively focusing on evidence supporting your beliefs while ignoring contradictions.
 <br />Accidental Fallacy— generalizing an exception, leading to false expectations.</i></p>`
+      },
+      {
+        id: 15,
+        title: '2 fishes in the tank',
+        category: 'philosophical',
+        excerpt: 'Lifecycle?',
+        date: '2025-02-18',
+        content: `
+        <p>My friend had 4 fishes. Two passed away before he moved out, the others were inherited by me. <b>2 remained</b>
+</p>
+<p>Like every other day, I watched them play, but something was different. One fish kept nudging the other, but there was no response. heartbreaking to see him wake his friend continuously , with fail. I buried it, was sad, but can only imagine how my guy felt. <b>1 remained. </b></p>
+</p>
+<p>To curb his loneliness, I bought a pair of similar fishes for him. I also got two small, colorful ones to keep myself company too. <b>5 remained. </b></p>
+<p>But life has crazy twists. The two new fish didn’t last long looked like the OG didn’t want anyone except his old mate. <b>3 remained.</b> </p>
+<p>As I had guessed, he followed soon after, passing away within a couple of days. <b>2 remained.</b> </p>
+<p>Watching them all go, I considered getting more fish but got caught up in other things. Then, a few days later, when I looked into the tank, I saw tiny little cuties. No need to buy more fish. <b>2+3 remains :p</b> </p>
+<p>I guess the moral of the story is that sometimes things have to leave to make space for something new. </p>`
       }
     // Add more posts following the same structure
   ];
