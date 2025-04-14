@@ -188,9 +188,6 @@ const projects = [
       ],
       githubLink: "https://github.com/azeebneuron/soft-engg-project-jan-2025-se-Jan-31"
     }
-    
-
-
 ];
 
 const Projects = () => {
