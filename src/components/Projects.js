@@ -119,7 +119,42 @@ const projects = [
         "Interactive visualizations"
       ],
       githubLink: "https://github.com/AyanNayyer/google-data-analytic"
+    },
+    {
+      id: 7,
+      title: "Resume Chatbot",
+      description: "An advanced AI-powered chatbot that intelligently answers questions from a resume using cutting-edge NLP techniques.",
+      tech: [
+        "LangChain",
+        "LangChain-Community",
+        "LangChain-Google-GenAI",
+        "ChromaDB",
+        "PyPDF",
+        "Sentence-Transformers",
+        "PyPDF2",
+        "Python-Dotenv",
+        "Pydantic",
+        "Google Generative AI (Gemini Model)"
+      ],
+      highlights: [
+        "Used LangChain framework for conversational retrieval workflows",
+        "Integrated Google Generative AI (Gemini 2.0) for factual responses",
+        "Processed and chunked resumes using PyPDF and RecursiveCharacterTextSplitter",
+        "Implemented vector database using ChromaDB for semantic search and retrieval",
+        "Built prompt engineering for accurate resume-based Q&A",
+        "Utilized Conversation Buffer Memory to store and manage chat history efficiently"
+      ],
+      features: [
+        "Resume-based Q&A chatbot powered by AI",
+        "Dynamic interaction with Google Generative AI",
+        "Semantic search for retrieving relevant resume sections",
+        "Professional formatting and concise responses",
+        "Highly customizable prompt template"
+      ],
+      githubLink: "https://github.com/AyanNayyer/resume-chatbot"
     }
+    
+
 
 ];
 
