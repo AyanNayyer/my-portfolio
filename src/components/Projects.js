@@ -152,6 +152,41 @@ const projects = [
         "Highly customizable prompt template"
       ],
       githubLink: "https://github.com/AyanNayyer/resume-chatbot"
+    },
+    {
+      id: 8,
+      title: " AI-Powered Learning Platform",
+      description: "A web app tailored for students, instructors, and administrators, featuring AI insights, chatbot support, and course management tools.",
+      tech: [
+        "Vue.js",
+        "Vite",
+        "Flask",
+        "Flask-SQLAlchemy",
+        "LangChain",
+        "Google Generative AI",
+        "YouTube Transcript API",
+        "Pandas",
+        "NumPy",
+        "Scikit-learn",
+        "Python-Dotenv"
+      ],
+      highlights: [
+        "Built a modern frontend with Vue.js and Vite for a responsive and interactive user experience",
+        "Developed robust backend APIs using Flask and Flask-SQLAlchemy",
+        "Integrated AI insights for personalized feedback to students and instructors",
+        "Implemented a chatbot for real-time student queries during lectures",
+        "Enhanced learning through automated video summarization using NLP and AI",
+        "Created role-based interfaces for students, instructors, and administrators"
+      ],
+      features: [
+        "AI-powered tutor chatbot for student assistance",
+        "Real-time course and deadline management system",
+        "Video summarization using YouTube Transcript API and NLP",
+        "Personalized feedback for students and instructors",
+        "Role-based access for administrators, instructors, and students",
+        "Fully customizable environment with modern tools and frameworks"
+      ],
+      githubLink: "https://github.com/azeebneuron/soft-engg-project-jan-2025-se-Jan-31"
     }
     
 
