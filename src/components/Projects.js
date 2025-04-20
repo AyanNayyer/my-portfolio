@@ -196,7 +196,7 @@ const Projects = () => {
   <div className="projects-header">
     <h1 className="projects-title modak-regular">Projects</h1>
     <a 
-      href="/Resume_Latest.pdf" 
+      href="/Resume.pdf" 
       target="_blank" 
       rel="noopener noreferrer" 
       className="resume-link"
