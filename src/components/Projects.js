@@ -187,7 +187,35 @@ const projects = [
         "Fully customizable environment with modern tools and frameworks"
       ],
       githubLink: "https://github.com/azeebneuron/soft-engg-project-jan-2025-se-Jan-31"
-    }
+    },
+    {
+      id: 9,
+      title: " Salary Optimization for Employee Retention - Industry 4.0",
+      description: "A data-driven Industry 4.0 case study that analyzes employee performance, salary, and retention data to design a fair, performance-aligned compensation model.",
+      tech: [
+        "Python",
+        "Pandas",
+        "Seaborn",
+        "scikit-learn",
+        "Data Analysis",
+        "Regression Modeling",
+        "Statistical Analysis",
+        "HR Analytics"],
+        highlights: [
+          "Performed regression analysis to identify salary inconsistencies",
+          "Built a salary optimization model aligned with employee performance",
+          "Identified 36,000+ underpaid high performers at risk of resignation",
+          "Derived strategic recommendations to improve retention and morale"
+        ],
+        features: [
+          "Performance vs. salary correlation analysis",
+          "Resignation trend analysis by salary band",
+          "Regression modeling using scikit-learn",
+          "Chi-square testing for statistical validation",
+          "Predictive insights for structured salary adjustments"
+        ],
+        githubLink: "https://github.com/AyanNayyer/Industry4.0_project"
+      }
 ];
 
 const Projects = () => {
