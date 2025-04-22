@@ -35,7 +35,7 @@ const Header = ({ isDarkMode, toggleDarkMode }) => {
 };
 
 const AppContent = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false); // Changed to true for default dark mode
+  const [isDarkMode, setIsDarkMode] = useState(true); // Changed to true for default dark mode
   const location = useLocation();
 
   useEffect(() => {
