@@ -215,6 +215,41 @@ const projects = [
           "Predictive insights for structured salary adjustments"
         ],
         githubLink: "https://github.com/AyanNayyer/Industry4.0_project"
+      },
+        {
+          id: 10,
+          title: "Decentralized Escrow & Service Marketplace (Hedera/Ethereum EVM)",
+          description: "A full-stack dApp enabling secure, trustless service transactions with on-chain escrow, decentralized identity, and multi-network (ETH/Hedera) support. Clients can request services, deposit funds in escrow, and providers can accept/reject work-all governed by smart contracts.",
+          tech: [
+            "Solidity",
+            "React.js",
+            "ethers.js",
+            "Hedera Hashgraph",
+            "Ethereum Sepolia",
+            "MetaMask",
+            "Smart Contracts",
+            "Web3",
+            "LocalStorage"
+          ],
+          highlights: [
+            "Designed and deployed EVM-compatible escrow smart contracts for secure, conditional fund release",
+            "Integrated React frontend with MetaMask wallet for seamless blockchain interaction",
+            "Enabled cross-network support: works on both Ethereum (Sepolia) and Hedera Testnet/Mainnet",
+            "Implemented decentralized identity (mocked DID) and profile management",
+            "Built creator dashboard with real-time project status and action flows",
+            "Persisted user profiles and services using localStorage for demo purposes"
+          ],
+          features: [
+            "Client-initiated service requests with on-chain escrow deposit",
+            "Provider dashboard for accepting/rejecting projects and marking completion",
+            "Automatic fund release or refund based on smart contract logic",
+            "Network-aware UI: detects and formats ETH/HBAR balances and transactions",
+            "Profile and service management with local persistence",
+            "MetaMask wallet connection and network switching (ETH/Hedera)",
+            "Error handling and user feedback for all blockchain operations"
+          ],
+          githubLink: "https://github.com/AyanNayyer/dist-trust"
+        
       }
 ];
 
