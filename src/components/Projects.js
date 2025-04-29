@@ -186,7 +186,7 @@ const projects = [
         "Role-based access for administrators, instructors, and students",
         "Fully customizable environment with modern tools and frameworks"
       ],
-      githubLink: "https://github.com/azeebneuron/soft-engg-project-jan-2025-se-Jan-31"
+      githubLink: "https://github.com/AyanNayyer/academia"
     },
     {
       id: 9,
