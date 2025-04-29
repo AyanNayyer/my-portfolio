@@ -250,6 +250,44 @@ const projects = [
           ],
           githubLink: "https://github.com/AyanNayyer/dist-trust"
         
+      },
+      {
+        id: 11,
+        title: "Task Manager (React + Flask Fullstack App)",
+        description: "A modern, full-stack task management web application where users can register, log in, and manage their personal tasks with priorities, completion status, and filtering. Designed for usability, security, and scalability, it provides a seamless experience for everyday task organization.",
+        tech: [
+          "React.js",
+          "React Router",
+          "React Query",
+          "Axios",
+          "Flask",
+          "Flask-SQLAlchemy",
+          "Flask-JWT-Extended",
+          "Flask-CORS",
+          "Flask-Bcrypt",
+          "SQLite",
+          "Python-dotenv",
+          "Modern CSS"
+        ],
+        highlights: [
+          "JWT-secured authentication system for user registration and login",
+          "RESTful API with Flask, handling all task and user operations",
+          "React frontend with protected routes, form validation, and responsive design",
+          "Real-time task updates and UI sync using React Query",
+          "Robust CORS handling for seamless local development",
+          "Persistent storage using SQLAlchemy ORM and SQLite (easily swappable for PostgreSQL/MySQL)",
+          "Seed script for demo users and tasks, enabling instant testing"
+        ],
+        features: [
+          "User registration and login with secure password hashing",
+          "Add, view, complete, and delete personal tasks",
+          "Set task priority (Low, Medium, High) and filter by status (All, Active, Completed)",
+          "Dashboard UI with real-time feedback and intuitive controls",
+          "Logout and session management",
+          "Responsive, mobile-friendly design",
+          "Clear error handling and user feedback on all operations"
+        ],
+        githubLink: "https://github.com/AyanNayyer/task-management-app"
       }
 ];
 
