@@ -288,7 +288,38 @@ const projects = [
           "Clear error handling and user feedback on all operations"
         ],
         githubLink: "https://github.com/AyanNayyer/task-management-app"
+      },
+      {
+        id: 12,
+        title: "Karwaan-e-Swarojgar NGO Website",
+        description: "Developed and deployed a modern, responsive website for Karwaan-e-Swarojgar, an NGO focused on community empowerment and social welfare. The site features animated hero sections, mobile-first design, and integrated contact/donation forms to enhance community engagement.",
+        tech: [
+          "React.js",
+          "Framer Motion",
+          "React Scroll",
+          "Google Forms",
+          "CSS3",
+          "Vite"
+        ],
+        highlights: [
+          "Fully responsive, mobile-friendly design tailored for accessibility",
+          "Animated hero and section transitions using Framer Motion",
+          "Smooth scroll navigation with react-scroll",
+          "Integrated Google Forms for contact and volunteer sign-up",
+          "Direct collaboration with NGO leadership for requirements and feedback",
+          "Optimized for SEO and fast load times"
+        ],
+        features: [
+          "Engaging landing page with animated hero section",
+          "About, Services, Impact, and Contact sections with clear calls to action",
+          "Integrated donation and contact forms for easy outreach",
+          "Sticky header with smooth navigation",
+          "Consistent branding and color scheme reflecting NGO identity"
+        ],
+        githubLink: "hhttps://github.com/AyanNayyer/NGO",
+        liveDemo: "https://ngo-five-kappa.vercel.app/"
       }
+
 ];
 
 const Projects = () => {
