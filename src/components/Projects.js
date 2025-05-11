@@ -316,7 +316,7 @@ const projects = [
           "Sticky header with smooth navigation",
           "Consistent branding and color scheme reflecting NGO identity"
         ],
-        githubLink: "hhttps://github.com/AyanNayyer/NGO",
+        githubLink: "https://github.com/AyanNayyer/NGO",
         liveDemo: "https://ngo-five-kappa.vercel.app/"
       }
 
