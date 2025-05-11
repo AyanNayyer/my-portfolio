@@ -291,8 +291,8 @@ const projects = [
       },
       {
         id: 12,
-        title: "Karwaan-e-Swarojgar NGO Website",
-        description: "Developed and deployed a modern, responsive website for Karwaan-e-Swarojgar, an NGO focused on community empowerment and social welfare. The site features animated hero sections, mobile-first design, and integrated contact/donation forms to enhance community engagement.",
+        title: "Karwaan-e-Swarozgar NGO Website",
+        description: "Developed and deployed a modern, responsive website for Karwaan-e-Swarozgar, an NGO focused on community empowerment and social welfare. The site features animated hero sections, mobile-first design, and integrated contact/donation forms to enhance community engagement.",
         tech: [
           "React.js",
           "Framer Motion",
