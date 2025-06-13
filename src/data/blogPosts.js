@@ -303,15 +303,15 @@ What follows is <b>"Accidental fallacy"</b>, you guarantee an exception as a gen
   excerpt: 'A walk through using Framer Motion to make React apps feel alive.',
   date: '2025-06-13',
   content: `
-<p>Okay, let me ask you something first — have you ever visited a website and felt like *everything just flows*? Nothing jumps or pops out abruptly. Instead, it feels like flipping pages in a book, only smoother. That’s the kind of feel I wanted for my <a href="https://ayannayyer.live" target="_blank">portfolio site</a>—and that’s where <b>Framer Motion</b> changed the game for me.</p>
+<p>Okay, let me ask you something first, have you ever visited a website and felt like *everything just flows*? Nothing jumps or pops out abruptly. Instead, it feels like flipping pages in a book, only smoother. That’s the kind of feel I wanted for my <a href="https://ayannayyer.live" target="_blank" color="red">portfolio site</a>—and that’s where <b>Framer Motion</b> changed the game for me.</p>
 
-<p>I was already working with <b>ReactJS</b> across multiple projects (you can see them on my GitHub). From a <i>Vue + Flask</i> based music streaming app to a full-stack task manager using JWT and SQLAlchemy, one thing that always felt missing was smoothness—visual feedback that responds to users like real-world motion does. So I gave <b>Framer Motion</b> a shot, and now it's a go-to in most of my frontend builds.</p>
+<p>I was already working with <b>ReactJS</b> across multiple projects (you can see them on my Projects Page). From a <i>Vue + Flask</i> based music streaming app to a full-stack task manager using JWT and SQLAlchemy, one thing that always felt missing was smoothness—visual feedback that responds to users like real-world motion does. So I gave <b>Framer Motion</b> a shot, and now it's a go-to in most of my frontend builds.</p>
 
 <p><b>Installation?</b> Piece of cake:</p>
 
 <pre><code>npm install framer-motion</code></pre>
 
-<p><b>And here's how I used it —</b></p>
+<p><b>And here's how I used it:</b></p>
 
 <h3>📄 Page Transitions (in Portfolio)</h3>
 
@@ -353,7 +353,7 @@ const PageWrapper = ({ children }) =&gt; (
 /&gt;
 </code></pre>
 
-<p>...made them feel alive. It’s not flashy — just *right*. The user clicks, the button reacts. Natural.</p>
+<p>...made them feel alive. It’s not flashy but just *right*. The user clicks, the button reacts. Natural.</p>
 
 <h3>🛠 Drag & Drop Experiments</h3>
 
@@ -368,7 +368,7 @@ const PageWrapper = ({ children }) =&gt; (
 /&gt;
 </code></pre>
 
-<p>This gave me a lot of flexibility for future UIs—like letting students reorder their learning paths.</p>
+<p>This gave me a lot of flexibility for future UIs like letting students reorder their learning paths.</p>
 
 <h3>💡 Why Framer Motion clicked for me?</h3>
 
@@ -378,16 +378,13 @@ const PageWrapper = ({ children }) =&gt; (
   <li>Integrates well with minimalist design philosophy I follow</li>
 </ul>
 
-<p>And it fits cleanly into my stack — React for frontend, Flask for APIs, JWT for auth, and wherever I can sneak in some animation magic without bloating things, I do.</p>
+<p>And it fits cleanly into my stack: React for frontend, Flask for APIs, JWT for auth, and wherever I can sneak in some animation magic without bloating things, I do.</p>
+<p>Framer Motion is not just a library; it’s a tool that helps me create experiences that feel more human. It’s like adding a layer of polish to your app that makes users go, "Wow, this feels good!"</p>
+<p>All With motion and minimalism :) </p>
 
-<div class="blog-image-container">
-    <img src="/framer-react.png" alt="Framer Motion in React" class="blog-image" />
-    <b><u><p class="image-caption">Built with motion & minimalism :)</p></u></b>
-</div>
+<p><b>TL;DR?</b> If you're building React apps and want to level up your UX with some meaningful animations, not over-the-top gimmicks, but the good subtle stuff. Framer Motion is 100% worth checking out.</p>
 
-<p><b>TL;DR?</b> If you're building React apps and want to level up your UX with some meaningful animation — not over-the-top gimmicks, but the good subtle stuff — Framer Motion is 100% worth checking out.</p>
-
-<p>Let me know if you try it! Or just hit me up on <a href="https://github.com/AyanNayyer" target="_blank">GitHub</a> or <a href="https://www.linkedin.com/in/ayannayyer/" target="_blank">LinkedIn</a>.</p>
+<p>Let me know if you try it! Or just hit me up on <a href="https://github.com/AyanNayyer" target="_blank" color="red">GitHub</a> or <a href="https://www.linkedin.com/in/ayannayyer/" target="_blank" color="red">LinkedIn</a>.</p>
 `}
     // Add more posts following the same structure
   ];
