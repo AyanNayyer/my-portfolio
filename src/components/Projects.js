@@ -5,6 +5,39 @@ import './Project.css';
 
 const projects = [
     {
+      id: 13,
+      title: "ShaNay",
+      description: "A live e-commerce platform for a handcrafted-goods brand with secure payment verification and concurrency-safe coupon redemption.",
+      tech: [
+        "React 19",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Node.js",
+        "Express",
+        "Supabase",
+        "Razorpay",
+        "Resend",
+        "Vercel"
+      ],
+      highlights: [
+        "Server recomputes order totals for each Razorpay order to prevent price tampering",
+        "Implements HMAC payment signature verification for secure checkout",
+        "Built race-condition-safe coupon redemption using async mutex and atomic file writes",
+        "Uses Supabase auth with email + Google OAuth",
+        "Adds API rate limits and strict origin allowlist for safer production traffic"
+      ],
+      features: [
+        "Secure checkout validation on server",
+        "Concurrency-safe coupon handling",
+        "Email and Google OAuth authentication",
+        "Transactional order emails with Resend",
+        "Responsive modern storefront UI"
+      ],
+      liveDemo: "https://shanay.org"
+    },
+    {
       id: 1,
       title: "Crime Category Prediction ML Model",
       description: "A machine learning model that predicts crime categories based on comprehensive incident data including location, time, victim demographics, and other key attributes.",
@@ -291,7 +324,7 @@ const projects = [
       },
       {
         id: 12,
-        title: "Karwaan-e-Swarozgar NGO Website",
+        title: "Karwaan-e-Swarozgar",
         description: "Developed and deployed a modern, responsive website for Karwaan-e-Swarozgar, an NGO focused on community empowerment and social welfare. The site features animated hero sections, mobile-first design, and integrated contact/donation forms to enhance community engagement.",
         tech: [
           "React.js",
@@ -317,7 +350,7 @@ const projects = [
           "Consistent branding and color scheme reflecting NGO identity"
         ],
         githubLink: "https://github.com/AyanNayyer/NGO",
-        liveDemo: "https://ngo-five-kappa.vercel.app/"
+        liveDemo: "https://karwaanes.org"
       }
 
 ];
@@ -345,36 +378,53 @@ const Projects = () => {
 >
   <h2>Skills</h2>
   <ul>
-    {/* Frontend */}
-    <li>React</li>
-    <li>NodeJS</li>
-    <li>VueJS</li>
+    {/* Languages */}
+    <li>Python</li>
+    <li>TypeScript</li>
     <li>JavaScript</li>
-    <li>HTML5 & CSS3</li>
-    <li>Framer Motion</li>
+    <li>Java</li>
+    <li>SQL</li>
+    <li>R</li>
+    <li>Solidity</li>
 
     {/* Backend */}
+    <li>FastAPI</li>
+    <li>Node.js/Express</li>
     <li>Flask</li>
+    <li>REST APIs</li>
+    <li>Event-driven Architecture</li>
+    <li>JWT/OAuth</li>
+    <li>Workflow Automation</li>
+    <li>BFF Pattern</li>
+
+    {/* Frontend */}
+    <li>React</li>
+    <li>Angular</li>
+    <li>Vue.js</li>
+    <li>Vite</li>
+    <li>Tailwind CSS</li>
+    <li>Framer Motion</li>
+    <li>HTML/CSS</li>
+
+    {/* Data & Infra */}
+    <li>SQL Server</li>
+    <li>PostgreSQL</li>
     <li>Redis</li>
-    <li>Celery</li>
-    <li>RESTful APIs</li>
-
-    {/* Data Science & Analytics */}
-    <li>Python</li>
-    <li>R Programming</li>
-    <li>SQL</li>
-    <li>Machine Learning</li>
-    <li>Data Analysis</li>
-    <li>Statistical Modeling</li>
-    <li>Data Visualization</li>
-
-    {/* Tools & Libraries */}
-    <li>ggplot2</li>
-    <li>dplyr</li>
-    <li>tidyverse</li>
-    <li>SQLAlchemy</li>
+    <li>Docker</li>
+    <li>Cloud Deployment</li>
     <li>Git</li>
-    <li>Webhooks</li>
+    <li>Caching Strategies</li>
+
+    {/* AI / ML */}
+    <li>Machine Learning</li>
+    <li>NLP</li>
+    <li>GenAI</li>
+    <li>LLM API Integration</li>
+    <li>Statistical Modeling</li>
+
+    {/* Other */}
+    <li>Payment Gateway Integration</li>
+    <li>Transactional Email Systems</li>
   </ul>
 </motion.section>
 
@@ -392,7 +442,15 @@ const Projects = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
             >
-              <h2 className="project-title">{project.title}</h2>
+              <h2 className="project-title">
+                {project.liveDemo ? (
+                  <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" className="project-title-link">
+                    {project.title}
+                  </a>
+                ) : (
+                  project.title
+                )}
+              </h2>
               <p className="project-description">{project.description}</p>
               <div className="project-tech">
                 {project.tech.map((tech, index) => (
@@ -405,9 +463,16 @@ const Projects = () => {
                 ))}
               </div>
               <div className="project-links">
-                <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="project-link">
-                  View on GitHub
-                </a>
+                {project.githubLink && (
+                  <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="project-link">
+                    View on GitHub
+                  </a>
+                )}
+                {project.liveDemo && (
+                  <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" className="project-link">
+                    View Live
+                  </a>
+                )}
               </div>
             </motion.article>
           ))}
