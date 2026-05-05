@@ -1,10 +1,8 @@
 import React from "react";
 
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaFacebook, FaEnvelope, FaPhone } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaEnvelope } from 'react-icons/fa';
 
 const Contact = () => {
-  const currentYear = new Date().getFullYear();
-  
   return (
     <>
       <div className="social-icons">

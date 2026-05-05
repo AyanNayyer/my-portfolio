@@ -1,4 +1,4 @@
-import React, { useState, useEffect, lazy, Suspense } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Analytics } from "@vercel/analytics/react"
 import { BrowserRouter as Router, Routes, Route, Link, useLocation} from 'react-router-dom';
 import CustomCursor from './components/CustomCursor';

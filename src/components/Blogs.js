@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useNavigate, useParams, Routes, Route, Link } from 'react-router-dom';
+import { useNavigate, useParams, Routes, Route } from 'react-router-dom';
 import { blogPosts } from '../data/blogPosts';
 import './Blog.css';
 
