@@ -38,6 +38,106 @@ const projects = [
       liveDemo: "https://shanay.org"
     },
     {
+      id: 12,
+      title: "Karwaan-e-Swarozgar",
+      description: "Developed and deployed a modern, responsive website for Karwaan-e-Swarozgar, an NGO focused on community empowerment and social welfare. The site features animated hero sections, mobile-first design, and integrated contact/donation forms to enhance community engagement.",
+      tech: [
+        "React.js",
+        "Framer Motion",
+        "React Scroll",
+        "Google Forms",
+        "CSS3",
+        "Vite"
+      ],
+      highlights: [
+        "Fully responsive, mobile-friendly design tailored for accessibility",
+        "Animated hero and section transitions using Framer Motion",
+        "Smooth scroll navigation with react-scroll",
+        "Integrated Google Forms for contact and volunteer sign-up",
+        "Direct collaboration with NGO leadership for requirements and feedback",
+        "Optimized for SEO and fast load times"
+      ],
+      features: [
+        "Engaging landing page with animated hero section",
+        "About, Services, Impact, and Contact sections with clear calls to action",
+        "Integrated donation and contact forms for easy outreach",
+        "Sticky header with smooth navigation",
+        "Consistent branding and color scheme reflecting NGO identity"
+      ],
+      githubLink: "https://github.com/AyanNayyer/NGO",
+      liveDemo: "https://karwaanes.org"
+    },
+    {
+      id: 8,
+      title: " AI-Powered Learning Platform",
+      description: "A web app tailored for students, instructors, and administrators, featuring AI insights, chatbot support, and course management tools.",
+      tech: [
+        "Vue.js",
+        "Vite",
+        "Flask",
+        "Flask-SQLAlchemy",
+        "LangChain",
+        "Google Generative AI",
+        "YouTube Transcript API",
+        "Pandas",
+        "NumPy",
+        "Scikit-learn",
+        "Python-Dotenv"
+      ],
+      highlights: [
+        "Built a modern frontend with Vue.js and Vite for a responsive and interactive user experience",
+        "Developed robust backend APIs using Flask and Flask-SQLAlchemy",
+        "Integrated AI insights for personalized feedback to students and instructors",
+        "Implemented a chatbot for real-time student queries during lectures",
+        "Enhanced learning through automated video summarization using NLP and AI",
+        "Created role-based interfaces for students, instructors, and administrators"
+      ],
+      features: [
+        "AI-powered tutor chatbot for student assistance",
+        "Real-time course and deadline management system",
+        "Video summarization using YouTube Transcript API and NLP",
+        "Personalized feedback for students and instructors",
+        "Role-based access for administrators, instructors, and students",
+        "Fully customizable environment with modern tools and frameworks"
+      ],
+      githubLink: "https://github.com/AyanNayyer/academia"
+    },
+    {
+      id: 10,
+      title: "Decentralized Escrow & Service Marketplace (Hedera/Ethereum EVM)",
+      description: "A full-stack dApp enabling secure, trustless service transactions with on-chain escrow, decentralized identity, and multi-network (ETH/Hedera) support. Clients can request services, deposit funds in escrow, and providers can accept/reject work-all governed by smart contracts.",
+      tech: [
+        "Solidity",
+        "React.js",
+        "ethers.js",
+        "Hedera Hashgraph",
+        "Ethereum Sepolia",
+        "MetaMask",
+        "Smart Contracts",
+        "Web3",
+        "LocalStorage"
+      ],
+      highlights: [
+        "Designed and deployed EVM-compatible escrow smart contracts for secure, conditional fund release",
+        "Integrated React frontend with MetaMask wallet for seamless blockchain interaction",
+        "Enabled cross-network support: works on both Ethereum (Sepolia) and Hedera Testnet/Mainnet",
+        "Implemented decentralized identity (mocked DID) and profile management",
+        "Built creator dashboard with real-time project status and action flows",
+        "Persisted user profiles and services using localStorage for demo purposes"
+      ],
+      features: [
+        "Client-initiated service requests with on-chain escrow deposit",
+        "Provider dashboard for accepting/rejecting projects and marking completion",
+        "Automatic fund release or refund based on smart contract logic",
+        "Network-aware UI: detects and formats ETH/HBAR balances and transactions",
+        "Profile and service management with local persistence",
+        "MetaMask wallet connection and network switching (ETH/Hedera)",
+        "Error handling and user feedback for all blockchain operations"
+      ],
+      githubLink: "https://github.com/AyanNayyer/dist-trust"
+    
+  },
+    {
       id: 1,
       title: "Crime Category Prediction ML Model",
       description: "A machine learning model that predicts crime categories based on comprehensive incident data including location, time, victim demographics, and other key attributes.",
@@ -187,41 +287,6 @@ const projects = [
       githubLink: "https://github.com/AyanNayyer/resume-chatbot"
     },
     {
-      id: 8,
-      title: " AI-Powered Learning Platform",
-      description: "A web app tailored for students, instructors, and administrators, featuring AI insights, chatbot support, and course management tools.",
-      tech: [
-        "Vue.js",
-        "Vite",
-        "Flask",
-        "Flask-SQLAlchemy",
-        "LangChain",
-        "Google Generative AI",
-        "YouTube Transcript API",
-        "Pandas",
-        "NumPy",
-        "Scikit-learn",
-        "Python-Dotenv"
-      ],
-      highlights: [
-        "Built a modern frontend with Vue.js and Vite for a responsive and interactive user experience",
-        "Developed robust backend APIs using Flask and Flask-SQLAlchemy",
-        "Integrated AI insights for personalized feedback to students and instructors",
-        "Implemented a chatbot for real-time student queries during lectures",
-        "Enhanced learning through automated video summarization using NLP and AI",
-        "Created role-based interfaces for students, instructors, and administrators"
-      ],
-      features: [
-        "AI-powered tutor chatbot for student assistance",
-        "Real-time course and deadline management system",
-        "Video summarization using YouTube Transcript API and NLP",
-        "Personalized feedback for students and instructors",
-        "Role-based access for administrators, instructors, and students",
-        "Fully customizable environment with modern tools and frameworks"
-      ],
-      githubLink: "https://github.com/AyanNayyer/academia"
-    },
-    {
       id: 9,
       title: " Salary Optimization for Employee Retention - Industry 4.0",
       description: "A data-driven Industry 4.0 case study that analyzes employee performance, salary, and retention data to design a fair, performance-aligned compensation model.",
@@ -248,41 +313,6 @@ const projects = [
           "Predictive insights for structured salary adjustments"
         ],
         githubLink: "https://github.com/AyanNayyer/Industry4.0_project"
-      },
-        {
-          id: 10,
-          title: "Decentralized Escrow & Service Marketplace (Hedera/Ethereum EVM)",
-          description: "A full-stack dApp enabling secure, trustless service transactions with on-chain escrow, decentralized identity, and multi-network (ETH/Hedera) support. Clients can request services, deposit funds in escrow, and providers can accept/reject work-all governed by smart contracts.",
-          tech: [
-            "Solidity",
-            "React.js",
-            "ethers.js",
-            "Hedera Hashgraph",
-            "Ethereum Sepolia",
-            "MetaMask",
-            "Smart Contracts",
-            "Web3",
-            "LocalStorage"
-          ],
-          highlights: [
-            "Designed and deployed EVM-compatible escrow smart contracts for secure, conditional fund release",
-            "Integrated React frontend with MetaMask wallet for seamless blockchain interaction",
-            "Enabled cross-network support: works on both Ethereum (Sepolia) and Hedera Testnet/Mainnet",
-            "Implemented decentralized identity (mocked DID) and profile management",
-            "Built creator dashboard with real-time project status and action flows",
-            "Persisted user profiles and services using localStorage for demo purposes"
-          ],
-          features: [
-            "Client-initiated service requests with on-chain escrow deposit",
-            "Provider dashboard for accepting/rejecting projects and marking completion",
-            "Automatic fund release or refund based on smart contract logic",
-            "Network-aware UI: detects and formats ETH/HBAR balances and transactions",
-            "Profile and service management with local persistence",
-            "MetaMask wallet connection and network switching (ETH/Hedera)",
-            "Error handling and user feedback for all blockchain operations"
-          ],
-          githubLink: "https://github.com/AyanNayyer/dist-trust"
-        
       },
       {
         id: 11,
@@ -321,36 +351,6 @@ const projects = [
           "Clear error handling and user feedback on all operations"
         ],
         githubLink: "https://github.com/AyanNayyer/task-management-app"
-      },
-      {
-        id: 12,
-        title: "Karwaan-e-Swarozgar",
-        description: "Developed and deployed a modern, responsive website for Karwaan-e-Swarozgar, an NGO focused on community empowerment and social welfare. The site features animated hero sections, mobile-first design, and integrated contact/donation forms to enhance community engagement.",
-        tech: [
-          "React.js",
-          "Framer Motion",
-          "React Scroll",
-          "Google Forms",
-          "CSS3",
-          "Vite"
-        ],
-        highlights: [
-          "Fully responsive, mobile-friendly design tailored for accessibility",
-          "Animated hero and section transitions using Framer Motion",
-          "Smooth scroll navigation with react-scroll",
-          "Integrated Google Forms for contact and volunteer sign-up",
-          "Direct collaboration with NGO leadership for requirements and feedback",
-          "Optimized for SEO and fast load times"
-        ],
-        features: [
-          "Engaging landing page with animated hero section",
-          "About, Services, Impact, and Contact sections with clear calls to action",
-          "Integrated donation and contact forms for easy outreach",
-          "Sticky header with smooth navigation",
-          "Consistent branding and color scheme reflecting NGO identity"
-        ],
-        githubLink: "https://github.com/AyanNayyer/NGO",
-        liveDemo: "https://karwaanes.org"
       }
 
 ];
