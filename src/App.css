@@ -23,9 +23,16 @@ body {
 }
 
 header {
-  position: fixed;  /* Changed to fixed positioning */
-  top: 20px;
-  right: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px 20px;
+  background: rgba(51, 51, 51, 0.72);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   z-index: 1000;
 }
 
@@ -38,6 +45,10 @@ button {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.page-container {
+  padding-top: 76px;
 }
 
 .blog-link {
@@ -324,6 +335,14 @@ main > section:not(.landing-page) {
 
 /* Mobile specific adjustments */
 @media screen and (max-width: 768px) {
+  header {
+    padding: 10px 12px;
+  }
+
+  .page-container {
+    padding-top: 64px;
+  }
+
   .landing-page {
     width: 100%;
     min-height: 100vh;
